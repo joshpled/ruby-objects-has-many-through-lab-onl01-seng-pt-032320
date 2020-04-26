@@ -22,11 +22,7 @@ def songs
 end
 
 def genres
-  Song.all.collect do |song|
-    if song.artist == self
-      @genres << song.genre
-    end
-  end
+  Song.all.collect {|song| song.artist == self ? @genres << song.genre}
   @genres
 end
 
