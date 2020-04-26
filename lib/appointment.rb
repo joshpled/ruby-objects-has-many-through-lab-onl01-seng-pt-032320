@@ -1,5 +1,5 @@
 class Appointment
 
-@@all
+@@all =[]
 
 end
