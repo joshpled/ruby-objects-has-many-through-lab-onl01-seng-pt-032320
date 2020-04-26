@@ -23,7 +23,8 @@ def artists
     if song.artist.genres == self
       @artist << song.artist
     end
-  end 
+  end
+  artist 
 end
 
 
