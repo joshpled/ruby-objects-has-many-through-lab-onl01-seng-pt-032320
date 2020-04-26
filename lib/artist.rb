@@ -22,7 +22,7 @@ def songs
 end
 
 def genres
-  Song.all.select {|song| song.genre == genre}
+  Song.all.select {|song| song.genre}
 end
 
 end
