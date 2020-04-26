@@ -21,10 +21,10 @@ end
 def artists
   Song.all.collect do |song|
     if song.genre == self
-      @artist << song.artist
+      @artists << song.artist
     end
   end
-  @artist.uniq
+  @artists.uniq
 end
 
 
