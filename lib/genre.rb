@@ -1,4 +1,4 @@
-def Genre
+class Genre
 
 attr_accessor :genre, :artist, :songs
 
