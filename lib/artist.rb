@@ -15,6 +15,7 @@ end
 
 def new_song(song_name,genre)
   song = Song.new(song_name, self, genre)
+  genres << genre
 end
 
 def songs
