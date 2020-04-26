@@ -25,7 +25,8 @@ class Doctor
       if apt.doctor == self
         @patients << apt.patient
       end
-    end 
+    end
+    @patients
   end
 
 
