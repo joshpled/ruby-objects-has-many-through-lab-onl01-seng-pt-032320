@@ -22,5 +22,11 @@ class Patient
 
     def doctors
       Appointment.all.collect do |appt|
+        if appt.patient == self
+          @appointments << appt.doctor
+        end
+      end
+      @appointments
+    end 
 
 end
