@@ -24,7 +24,7 @@ def artists
       @artist << song.artist
     end
   end
-  artist 
+  @artist 
 end
 
 
