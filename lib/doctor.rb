@@ -4,6 +4,7 @@ class Doctor
   @@all = []
   def initialize (name)
     @name = name
+    @patients = []
     @@all << self
   end
 
@@ -20,5 +21,12 @@ class Doctor
   end
 
   def patients
+    Appointment.all.collect do |apt|
+      if apt.doctor == self
+        @patients << apt.patient
+      end
+    end 
+  end
+
 
 end
