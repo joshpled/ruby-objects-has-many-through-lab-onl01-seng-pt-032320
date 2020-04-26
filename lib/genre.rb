@@ -1,6 +1,6 @@
 class Genre
 
-attr_accessor :name, :artist, :songs
+attr_accessor :name, :artists, :songs
 
 @@all = []
 
