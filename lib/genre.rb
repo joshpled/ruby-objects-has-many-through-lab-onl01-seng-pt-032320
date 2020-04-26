@@ -19,7 +19,10 @@ def songs
 end
 
 def artists
-  Song.all.select {|song| song.artist.genres == self }
+  Song.all.collect do |song|
+    if song.artist.genres == self
+      @artist << song.artist
+    end 
 end
 
 
